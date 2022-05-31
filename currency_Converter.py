@@ -4,7 +4,7 @@ from tkinter import messagebox
 
 
 root = Tk()
-root.title('Codemy.com - Currency Conversion')
+root.title('Currency Conversion')
 root.iconbitmap("D:\Python projects\currency-exchange-icon.ico")
 root.geometry("500x500")
 
@@ -27,7 +27,7 @@ my_notebook.add(conversion_frame, text="Convert")
 my_notebook.tab(1, state='disabled')
 
 #######################
-# CURRENCY STUFF
+# TAB1 = CURRENCY 
 #######################
 def lock():
 	if not home_entry.get() or not conversion_entry.get() or not rate_entry.get():
@@ -90,7 +90,7 @@ unlock_button.grid(row=0, column=1, padx=10)
 
 
 #######################
-# CONVERSION STUFF
+# TAB 2 =  CONVERSION 
 #######################
 def convert():
 	# Clear Converted Entry Box
